@@ -1,0 +1,6 @@
+#ide
+.history
+.vscode
+
+#project
+node_modules
