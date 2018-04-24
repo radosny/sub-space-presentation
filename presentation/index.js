@@ -38,7 +38,8 @@ const theme = createTheme(
   {
     primary: "white",
     secondary: "#1F2022", //black
-    tertiary: "#03A9FC", //blue
+    // tertiary: "#03A9FC", //blue
+    tertiary: "#b2fba9", //green
     quarternary: "#CECECE" // gray
   },
   {
@@ -75,7 +76,7 @@ export default class Presentation extends React.Component {
               background: "#b2fba9"
             }}
           >
-            <Image height="60px" src={images.olxLogo} />
+            <Image height="60px" src={images.olxLogo.replace("/", "")} />
           </div>
         </Slide>
         <Slide bgColor="secondary">
@@ -139,7 +140,7 @@ class BigApp extends Component {
           </Slide>
         </Magic>
         <Slide bgColor="tertiary">
-          <Heading size={2} textColor="primary" caps>
+          <Heading size={2} textColor="secondary" caps>
             Best for:
           </Heading>
         </Slide>
@@ -233,7 +234,7 @@ export default connect(mapStateToProps)(App)
           <Heading size={4} margin="0 0 30px" textColor={"tertiary"}>
             new mobile web OLX
           </Heading>
-          <Image fit src={images.olxapp} />
+          <Image fit src={images.olxapp.replace("/", "")} />
         </Slide>
         <Slide bgColor="secondary">
           <Heading size={4} textColor="primary" caps>
@@ -425,20 +426,20 @@ export default connect(mapStateToProps)(App)
           <Heading size={3} margin="0 0 50px" textColor="primary" caps>
             Lerna - example
           </Heading>
-          <Image height="600px" src={images.lerna} />
+          <Image height="600px" src={images.lerna.replace("/", "")} />
         </Slide>
         <Slide bgColor="secondary">
           <Heading size={1} margin="0 0 50px" textColor="primary" caps>
             Demo time
           </Heading>
         </Slide>
-        <Slide bgImage={images.reactRedux} bgPosition="50% 50%" bgRepeat="no-repeat" bgSize="contain"/>
+        <Slide bgImage={images.reactRedux.replace("/", "")} bgPosition="50% 50%" bgRepeat="no-repeat" bgSize="contain"/>
         <Slide bgColor="secondary">
           <Heading size={1} margin="0 0 50px" textColor="primary">
             What is missing?
           </Heading>
         </Slide>
-        <Slide bgImage={images.subStores} bgPosition="50% 50%" bgRepeat="no-repeat" bgSize="contain"/>
+        <Slide bgImage={images.subStores.replace("/", "")} bgPosition="50% 50%" bgRepeat="no-repeat" bgSize="contain"/>
         <Slide bgColor="secondary">
           <Heading size={2} margin="0 0 50px" textColor="primary">
             Why?!
